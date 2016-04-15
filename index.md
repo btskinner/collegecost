@@ -283,7 +283,7 @@ site.baseurl }}/methodology/)
 County-level weighted cost data were computed in [R](https://cran.r-project.org) by the authors using
 information gathered from IPEDS.  The interactive maps were
 constructed using [D3.js](d3.js), the US TopoJSON file made available
-by [Mike Bostocks](https://bost.ocks.org/), and plugins created by
+by [Mike Bostock](https://bost.ocks.org/), and plugins created by
 [Susie Lu](http://d3-legend.susielu.com) and
 [Bj&oslash;rn Sandvik](https://github.com/MasterMaps/d3-slider).
 
