@@ -54,29 +54,50 @@ custom_js:
 	margin-top: -2.5rem;
 }
 
+#buttons-container {
+	position: relative;
+	width: 50%;
+	padding-bottom: 3rem;
+}
+
+#colgroup {
+	float: left;
+	width: 70%;
+}
+
+#play {
+	float: right;
+	width: 30%;
+}
 
 </style>
 
 <div id="map-container"></div>
 <div id="tooltip-container"><div id="tooltip"></div></div>
 <div id="widget-container">
-<div style="text-align:left; padding-bottom:1rem" id="colgroup">
-<select id="sample" class="select">
-<optgroup label="College sample">
-            <option value="0">All colleges</option>
-            <option value="1">Public colleges</option>
-            <option value="2">Public four year colleges</option>
-            <option value="3" selected>Public two year colleges</option>
-</optgroup>
-</select>
-<select id="weight" class="select">
-<optgroup label="Weighting">
-            <option value="0">Across state lines</option>
-            <option value="1" selected>Compare within state only</option>
-</optgroup>
-</select>
+	<div id="buttons-container">
+		<div id="colgroup">
+			<select id="sample" class="select">
+				<optgroup label="College sample">
+					<option value="0">All colleges</option>
+					<option value="1">Public colleges</option>
+					<option value="2">Public four year colleges</option>
+					<option value="3" selected>Public two year colleges</option>
+				</optgroup>
+			</select>
+			<select id="weight" class="select">
+				<optgroup label="Weighting">
+					<option value="0">Across state lines</option>
+					<option value="1" selected>Compare within state only</option>
+				</optgroup>
+			</select>
+		</div>
+		<div id="play">
+			<i class="fa fa-play fa-2x" title="Play animation"></i>
+		</div>
+	</div>
+	<div id="slider"></div>
 </div>
-<div id="slider"></div></div>
 
 
 <script type="text/javascript">
@@ -91,16 +112,23 @@ queue()
 function ready(error, us, data, names) {
 
 	// init variables for first load
-	var year = "1997"
-		school = "3"
-		weight = "1";
+	var minyear = "1997",
+		maxyear = "2012",
+		year = minyear,
+		school = "3",
+		weight = "1",
+		currentFrame = 0,
+		frameLength = +maxyear - +minyear,
+		interval,
+		playTime = 1000,
+		isPlaying = false;
 
 	// concatenate to make data column name (this is how right
 	// cost/decile value are selected
 	var	dataColumn = year + school + weight;
 
 	// map dimensions
-	var width = 1120
+	var width = 1120,
 		height = 695;
 
 	// set projection
@@ -242,15 +270,70 @@ function ready(error, us, data, names) {
 
 	// if year slider moves, redraw map only
 	var axis = d3.svg.axis().ticks(16).tickFormat(d3.format("d"));
-	d3.select("#slider").call(d3.slider()
+	slider = d3.slider()
 		.axis(axis)
 		.min(1997)
 		.max(2012)
 		.step(1)
 		.on("slide", function(evt, value) {
-			d3.select("#slidertext").text(value);
+			
+			// stop animation if playing
+			if ( isPlaying ) {
+				clearInterval(interval);
+			}
+			
+			// reset the current frame so new animation starts here
+			currentFrame = +value - +minyear
+			
+			// draw the map
 			drawMap(value + school + weight);
-		}));
+		
+		});
+	
+	// call slider
+	d3.select("#slider").call(slider);
+		
+	// play/pause
+	d3.select("#play").on("click", function() {
+		if ( !isPlaying ) {
+			isPlaying = true;
+			$(this).find("i")
+				.toggleClass("fa-play fa-pause")
+				.attr("title", "Pause animation");
+			animate();
+		} else {
+			isPlaying = false;
+			$(this).find("i")
+				.toggleClass("fa-pause fa-play")
+				.attr("title", "Play animation");
+			clearInterval (interval);
+		}
+	});
+
+	// animate
+	function animate(){
+		interval = setInterval ( function(){
+		
+		// increment current frame
+		currentFrame++;
+		
+		// if it's above max, return to min
+		if (currentFrame == frameLength + 1) currentFrame = 0;
+		
+		// store year
+		var y = +currentFrame + +minyear
+		
+		// move slider button
+		d3.select("#slider .d3-slider-handle")
+			.style("left",100*currentFrame/frameLength + "%");
+		
+		// change slider value
+		slider.value(y)
+		
+		// draw the map
+		drawMap(y + school + weight);
+	}, playTime);
+}
 }
 
 
