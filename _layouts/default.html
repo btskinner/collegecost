@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include header.html %}
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <h6 class="site-subtitle"><a href="{{ site.baseurl }}/authors/">{{ site.subtitle }}</a>
+      </h6>
+      {{ content }}
+    </header>
+  </main>
+  <main>
+    <div class="footer">
+      {% include footer.html %}
+    </div>
+  </main>
+  {% if site.google_analytics %}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+title: Changing college costs from 1997 to 2012
+subtitle: Will Doyle and Benjamin Skinner
+baseurl: ""
+github: https://github.com/btskinner/collegecost
+mail: b.skinner@vanderbilt.edu
+
+date_format: "%d %B %Y"
+
+google_analytics: UA-63981025-1
+disqus_shortname:
+
+# Build settings
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+
+
