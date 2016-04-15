@@ -83,9 +83,9 @@ custom_js:
 
 // wait until all is loaded
 queue()
-    .defer(d3.json, "{{ site.baseurl }}/data/us.json")
-    .defer(d3.tsv, "{{ site.baseurl }}/data/mapdata_wide.tsv")
-	.defer(d3.tsv, "{{ site.baseurl }}/data/countynames.tsv")
+    .defer(d3.json, "{{ site.siteurl }}/data/us.json")
+    .defer(d3.tsv, "{{ site.siteurl }}/data/mapdata_wide.tsv")
+	.defer(d3.tsv, "{{ site.siteurl }}/data/countynames.tsv")
     .await(ready);
 
 function ready(error, us, data, names) {
