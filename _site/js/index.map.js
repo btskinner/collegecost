@@ -22,8 +22,7 @@ var opts = {
     , position: 'absolute' 
 }
 
-var target = document.getElementById('map-container')
-    .setAttribute("class", "mapload");
+var target = document.getElementById('map-container');
 
 
 // loader settings
