@@ -1,8 +1,3 @@
-
-.counties {
-    fill: none;
-}
-
 .states {
     fill: none;
     stroke: #fff;
@@ -37,34 +32,27 @@
     margin-bottom: 6rem;
     position: relative;
     width: 100%;
-    margin-top: -2.5rem;
+    margin-top: -2rem;
 }
 
 #buttons-container {
     position: relative;
-    width: 50%;
-    padding-bottom: 3rem;
-    clear: both;
-}
-
-#colgroup {
-    position: relative;
+    width: 400px;
+    padding-bottom: 2.5rem;
 }
 
 #sample {
-    display: inline;
-    float: left;
+	float: left;
 }
 
 #weight {
-    display: inline;
-    position: absolute;
-    float: right;
+	float: left;
+	margin-right: 5;
 }
 
 #play {
-    float: left;
-    display: inline;
+	float: left;
+	margin-left: 100;
 }
 
 .fa-play:hover {
