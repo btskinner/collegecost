@@ -34,7 +34,7 @@ custom_js:
 			</optgroup>
 		</select>
 		<div id="play">
-		<i class="fa fa-play fa-2x" title="Play animation"></i>
+		<i class="fa fa-play fa-3x" title="Play animation"></i>
 		</div>
 	</div>
 	<div id="slider"></div>

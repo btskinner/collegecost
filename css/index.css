@@ -38,21 +38,24 @@
 #buttons-container {
     position: relative;
     width: 400px;
-    padding-bottom: 2.5rem;
+    padding-bottom: 3.5rem;
 }
 
 #sample {
-	float: left;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 14px;
 }
 
 #weight {
-	float: left;
-	margin-right: 5;
+	position: absolute;
+	margin-left: 190px;
+	margin-top: 14px;
 }
 
 #play {
-	float: left;
-	margin-left: 100;
+	position: absolute;
+	margin-left: 385px;
 }
 
 .fa-play:hover {
