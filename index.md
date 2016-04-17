@@ -54,8 +54,8 @@ include:
 
 * all Title IV colleges
 * only public colleges
-* only four-year public
-* colleges only two-year public colleges
+* only four-year public colleges  
+* only two-year public colleges
 
 You can also change whether the weighting computation crosses state
 lines or only considers in-state
