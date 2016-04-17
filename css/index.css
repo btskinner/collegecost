@@ -71,10 +71,12 @@
 }
 
 #sample {
-    float: left;
+    position: absolute;
+    left: 0;
 }
 
 #weight {
-    float: right;
+    position: absolute;
+    right: 0;
 }
 
