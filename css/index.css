@@ -1,0 +1,72 @@
+
+.counties {
+    fill: none;
+}
+
+.states {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+}
+
+#tooltip-container {
+    float: right;
+    position: relative;
+    width: 60%;
+    height: 2rem;
+    text-align:right;
+}
+
+#tooltip {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: none;
+}
+
+.tooltip_key {
+    font-weight: bold;
+}
+
+.tooltip_value {
+    float: right;
+}
+
+#widget-container {
+    float: left;
+    margin-bottom: 6rem;
+    position: relative;
+    width: 100%;
+    margin-top: -2.5rem;
+}
+
+#buttons-container {
+    position: relative;
+    width: 50%;
+    padding-bottom: 3rem;
+}
+
+#colgroup {
+    float: left;
+    width: 70%;
+}
+
+#play {
+    float: right;
+    width: 30%;
+}
+
+.fa-play:hover {
+    color: #0074d9;
+}
+
+.fa-pause:hover {
+    color: #0074d9;
+}
+
+.mapload {
+    width: 1120px;
+    height: 695px;
+}
+
+
