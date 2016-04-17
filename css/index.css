@@ -48,13 +48,23 @@
 }
 
 #colgroup {
+    position: relative;
+}
+
+#sample {
+    display: inline;
     float: left;
-    width: 70%;
+}
+
+#weight {
+    display: inline;
+    position: absolute;
+    float: right;
 }
 
 #play {
-    float: right;
-    width: 30%;
+    float: left;
+    display: inline;
 }
 
 .fa-play:hover {
@@ -69,5 +79,3 @@
     width: 1120px;
     height: 695px;
 }
-
-

@@ -19,24 +19,22 @@ custom_js:
 <div id="tooltip-container"><div id="tooltip"></div></div>
 <div id="widget-container">
 	<div id="buttons-container">
-		<div id="colgroup">
-			<select id="sample">
-				<optgroup label="College sample">
-					<option value="0">All colleges</option>
-					<option value="1">Public colleges</option>
-					<option value="2">Public four year colleges</option>
-					<option value="3" selected>Public two year colleges</option>
-				</optgroup>
-			</select>
-			<select id="weight">
-				<optgroup label="Weighting">
-					<option value="0">Across state lines</option>
-					<option value="1" selected>Compare within state only</option>
-				</optgroup>
-			</select>
-		</div>
+		<select id="sample">	
+			<optgroup label="College sample">
+				<option value="0">All colleges</option>
+				<option value="1">Public colleges</option>
+				<option value="2">Public four year colleges</option>
+				<option value="3" selected>Public two year colleges</option>
+			</optgroup>
+		</select>
+		<select id="weight">
+			<optgroup label="Weighting">
+				<option value="0">Across state lines</option>
+				<option value="1" selected>Compare within state only</option>
+			</optgroup>
+		</select>
 		<div id="play">
-			<i class="fa fa-play fa-2x" title="Play animation"></i>
+		<i class="fa fa-play fa-2x" title="Play animation"></i>
 		</div>
 	</div>
 	<div id="slider"></div>
