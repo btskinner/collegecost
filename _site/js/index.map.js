@@ -23,6 +23,7 @@ var opts = {
 }
 
 var target = document.getElementById('map-container')
+    .setAttribute("class", "mapload");
 
 
 // loader settings
