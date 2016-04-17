@@ -20,7 +20,7 @@ custom_js:
 <div id="widget-container">
 	<div id="buttons-container">
 		<div id="colgroup">
-			<select id="sample" class="select">
+			<select id="sample">
 				<optgroup label="College sample">
 					<option value="0">All colleges</option>
 					<option value="1">Public colleges</option>
@@ -28,7 +28,7 @@ custom_js:
 					<option value="3" selected>Public two year colleges</option>
 				</optgroup>
 			</select>
-			<select id="weight" class="select">
+			<select id="weight">
 				<optgroup label="Weighting">
 					<option value="0">Across state lines</option>
 					<option value="1" selected>Compare within state only</option>
@@ -70,8 +70,7 @@ County-level weighted cost data were computed in [R](https://cran.r-project.org)
 information gathered from IPEDS.  The interactive maps were
 constructed using [D3.js](d3.js), the US TopoJSON file made available
 by [Mike Bostock](https://bost.ocks.org/), and plugins created by
-[Susie Lu](http://d3-legend.susielu.com) and
-[Bj&oslash;rn Sandvik](https://github.com/MasterMaps/d3-slider).
+[Susie Lu](http://d3-legend.susielu.com), [Bj&oslash;rn Sandvik](https://github.com/MasterMaps/d3-slider), and [Felix Gnass](http://spin.js.org).
 
 <br>
 <br>

@@ -44,6 +44,7 @@
     position: relative;
     width: 50%;
     padding-bottom: 3rem;
+    clear: both;
 }
 
 #colgroup {
@@ -69,4 +70,11 @@
     height: 695px;
 }
 
+#sample {
+    float: left;
+}
+
+#weight {
+    float: right;
+}
 
