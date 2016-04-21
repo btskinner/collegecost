@@ -76,13 +76,14 @@ function ready(us, data, names) {
     var colorDomain = [9,8,7,6,5,4,3,2,1,0];
     var legendLabels = [
 	["> $27k","$24k - $27k","$21k - $24k","$18k - $21k","$15k - $18k",
-	 "$12k - $15k","$9k - $12k","$6k - $9k","$3k - $6k","< $3k"],
-	["> $9k","$8k - $9k","$7k - $8k","$6k - $7k","$5k - $6k","$4k - $5k",
-	 "$3k - $4k","$2k - $3k","$1k - $2k","< $1k"],
-	["> $9k","$8k - $9k","$7k - $8k","$6k - $7k","$5k - $6k","$4k - $5k",
-	 "$3k - $4k","$2k - $3k","$1k - $2k","< $1k"],
-	["> $4.5k","$4k - $4.5k","$3.5k - $4k","$3k - $3.5k","$2.5k - $3k","$2k - $2.5k",
-	 "$1.5k - $2k","$1k - $1.5k","$500 - $1k","< $500"]];
+	 "$12k - $15k","$9k - $12k","$6k - $9k","$3k - $6k","< $3k"]
+	, ["> $9k","$8k - $9k","$7k - $8k","$6k - $7k","$5k - $6k","$4k - $5k",
+	   "$3k - $4k","$2k - $3k","$1k - $2k","< $1k"]
+	, ["> $9k","$8k - $9k","$7k - $8k","$6k - $7k","$5k - $6k","$4k - $5k",
+	   "$3k - $4k","$2k - $3k","$1k - $2k","< $1k"]
+	, ["> $4.5k","$4k - $4.5k","$3.5k - $4k","$3k - $3.5k","$2.5k - $3k",
+	 "$2k - $2.5k","$1.5k - $2k","$1k - $1.5k","$500 - $1k","< $500"]
+    ];
     
     // color function
     var color = d3.scale.ordinal()
@@ -158,7 +159,9 @@ function ready(us, data, names) {
             });
 	
 	svg.append("path")
-	    .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
+	    .datum(topojson.mesh(us, us.objects.states, function(a, b) {
+		return a !== b;
+	    }))
 	    .attr("class", "states")
 	    .attr("d", path);
 	
@@ -195,13 +198,15 @@ function ready(us, data, names) {
     
     // if sample selector changes, redraw map and legend
     d3.select("#sample").on("change", function() {
-	drawMap(year + this.value + weight);
-	drawLegend(year + this.value + weight);
+	school = this.value;
+	drawMap(year + school + weight);
+	drawLegend(year + school + weight);
     });
     
     // if weight selector changes, redraw map only
     d3.select("#weight").on("change", function() {
-	drawMap(year + school + this.value);
+	weight = this.value;
+	drawMap(year + school + weight);
     });
     
     // if year slider moves, redraw map only
@@ -215,7 +220,14 @@ function ready(us, data, names) {
 	    
 	    // stop animation if playing
 	    if ( isPlaying ) {
-		clearInterval(interval);
+		isPlaying = false;
+		d3.select("#play").selectAll("i")
+		    .call(function() {
+			$(this)
+			    .toggleClass("fa-pause fa-play")
+			    .attr("title", "Play animation");
+		    });
+		clearInterval (interval);
 	    }
 	    
 	    // reset the current frame so new animation starts here
@@ -264,10 +276,13 @@ function ready(us, data, names) {
 		.style("left",100*currentFrame/frameLength + "%");
 	    
 	    // change slider value
-	    slider.value(y)
+	    slider.value(y);
+
+	    // change year
+	    year = String(y);
 	    
 	    // draw the map
-	    drawMap(y + school + weight);
+	    drawMap(year + school + weight);
 	}, playTime);
     }
 }
