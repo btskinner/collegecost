@@ -1,7 +1,6 @@
 ---
 layout: page
 custom_css:
-- d3.slider
 - index
 custom_js:
 - d3.min
@@ -15,29 +14,35 @@ custom_js:
 - index.map
 ---
 
-<div id="map-container"></div>
-<div id="tooltip-container"><div id="tooltip"></div></div>
-<div id="widget-container">
-	<div id="buttons-container">
-		<select id="sample">	
-			<optgroup label="College sample">
-				<option value="0">All colleges</option>
-				<option value="1">Public colleges</option>
-				<option value="2">Public four year colleges</option>
-				<option value="3" selected>Public two year colleges</option>
-			</optgroup>
-		</select>
-		<select id="weight">
-			<optgroup label="Weighting">
-				<option value="0">Across state lines</option>
-				<option value="1" selected>Compare within state only</option>
-			</optgroup>
-		</select>
-		<div id="play">
-		<i class="fa fa-play fa-3x" title="Play animation"></i>
+<div id="viz-container">
+	<div id="map-container"></div>
+	<div id="submap-container">
+		<div id="buttons-container">
+			<select id="sample">	
+				<optgroup label="College sample">
+					<option value="0">All colleges</option>
+					<option value="1">Public colleges</option>
+					<option value="2">Public four year colleges</option>
+					<option value="3" selected>Public two year colleges</option>
+				</optgroup>
+			</select>
+			<select id="weight">
+				<optgroup label="Weighting">
+					<option value="0">Across state lines</option>
+					<option value="1" selected>Compare within state only</option>
+				</optgroup>
+			</select>
+			<div id="play">
+				<i class="fa fa-play fa-3x" title="Play animation"></i>
+			</div>
+		</div>
+		<div id="tooltip-container">
+			<div id="tooltip"></div>
+		</div>
+		<div id="slider-container">
+			<div id="slider"></div>
 		</div>
 	</div>
-	<div id="slider"></div>
 </div>
 
 While a person who wishes to attend college has, in theory, thousands

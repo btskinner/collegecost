@@ -1,16 +1,80 @@
-.states {
-    fill: none;
-    stroke: #fff;
-    stroke-linejoin: round;
+/* Containers --------------------------------- */
+
+#viz-container {
+    position: relative;
+    width: 1120px;
+    min-height: 695px;
+    margin-bottom: 8rem;
+}
+
+#map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 695px;
+}
+
+#submap-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -3rem;
+}
+
+#buttons-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
 }
 
 #tooltip-container {
-    float: right;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 60%;
-    height: 2rem;
-    text-align:right;
+    margin-top: 1rem;
+    text-align: right;
 }
+
+#slider-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 3.5rem;
+    width: 100%;
+}
+
+/* Selectors/Buttons -------------------------- */
+
+#sample {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 14px;
+}
+
+#weight {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 14px;
+}
+
+#play {
+    position: absolute;
+    margin-left: 385px;
+}
+
+.fa-play:hover {
+    color: #0074d9;
+}
+
+.fa-pause:hover {
+    color: #0074d9;
+}
+
+/* Tooltip ------------------------------------ */
 
 #tooltip {
     position: relative;
@@ -27,46 +91,85 @@
     float: right;
 }
 
-#widget-container {
-    float: left;
-    margin-bottom: 6rem;
+
+/* Slider ------------------------------------- */
+
+.d3-slider {
     position: relative;
-    width: 100%;
-    margin-top: -3rem;
+    font-size: 1.1em;
+    border: 1px solid #aaaaaa;
+    z-index: 2;
 }
 
-#buttons-container {
+.d3-slider-horizontal {
+    height: .8em;
+}
+
+.d3-slider-range {
+    background: #2980b9;
+    left: 0px;
+    right: 0px;
+    height: 0.8em;
+    position: absolute;
+}
+
+.d3-slider-handle {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    background: #eee;
+    background: linear-gradient(to bottom, #eee 0%, #ddd 100%);
+    z-index: 3;
+}
+
+.d3-slider-handle:hover {
+    border: 1px solid #999999;
+}
+
+.d3-slider-horizontal .d3-slider-handle {
+    top: -.3em;
+    margin-left: -.6em;
+}
+
+.d3-slider-axis {
     position: relative;
-    width: 400px;
-    padding-bottom: 3.5rem;
+    z-index: 1;
 }
 
-#sample {
-	position: absolute;
-	margin-left: 0px;
-	margin-top: 14px;
+.d3-slider-axis-bottom {
+    top: .8em;
 }
 
-#weight {
-	position: absolute;
-	margin-left: 190px;
-	margin-top: 14px;
+.d3-slider-axis-right {
+    left: .8em;
 }
 
-#play {
-	position: absolute;
-	margin-left: 385px;
+.d3-slider-axis path {
+    stroke-width: 0;
+    fill: none;
 }
 
-.fa-play:hover {
-    color: #0074d9;
+.d3-slider-axis line {
+    fill: none;
+    stroke: #aaa;
+    shape-rendering: crispEdges;
 }
 
-.fa-pause:hover {
-    color: #0074d9;
+.d3-slider-axis text {
+    font-size: 1.4rem;
 }
 
-#map-container {
-    width: 1120px;
-    height: 695px;
+
+/* Map classes -------------------------------- */
+
+.counties {
+    fill: none;
+}
+
+.states {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
 }
