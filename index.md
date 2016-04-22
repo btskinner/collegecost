@@ -67,6 +67,8 @@ lines or only considers in-state
 schools. [Visit the methodology page for a more complete explanation of how the weighted averages are computed.]({{
 site.baseurl }}/methodology/)
 
+<br>
+
 #### Acknowledgements
 
 County-level weighted cost data were computed in [R](https://cran.r-project.org) by the authors using
@@ -75,7 +77,6 @@ constructed using [D3.js](d3.js), the US TopoJSON file made available
 by [Mike Bostock](https://bost.ocks.org/), and plugins created by
 [Susie Lu](http://d3-legend.susielu.com), [Bj&oslash;rn Sandvik](https://github.com/MasterMaps/d3-slider), and [Felix Gnass](http://spin.js.org).
 
-<br>
 <br>
 
 
