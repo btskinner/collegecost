@@ -35,9 +35,9 @@ function init() {
 
     // wait until load all
     queue()
-	.defer(d3.json, "{{ site.url }}/data/us.json")
-	.defer(d3.tsv, "{{ site.url }}/data/mapdata_wide.tsv")
-	.defer(d3.tsv, "{{ site.url }}/data/countynames.tsv")
+	.defer(d3.json, "{{ site.siteurl }}/data/us.json")
+	.defer(d3.tsv, "{{ site.siteurl }}/data/mapdata_wide.tsv")
+	.defer(d3.tsv, "{{ site.siteurl }}/data/countynames.tsv")
 	.await(function(error, us, data, names) {
 	    spinner.stop();
 	    ready(us, data, names);
