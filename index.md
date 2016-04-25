@@ -18,7 +18,7 @@ custom_js:
 	<div id="map-container"></div>
 	<div id="submap-container">
 		<div id="buttons-container">
-			<select id="sample">	
+			<select id="sample">
 				<optgroup label="College sample">
 					<option value="0">All colleges</option>
 					<option value="1">Public colleges</option>
@@ -45,6 +45,8 @@ custom_js:
 	</div>
 </div>
 
+<div class="posttext" markdown="1">
+
 While a person who wishes to attend college has, in theory, thousands
 of choices, the reality is that his or her options are practically
 constrained by where he or she lives. Based on the number and
@@ -59,7 +61,7 @@ include:
 
 * all Title IV colleges
 * only public colleges
-* only four-year public colleges  
+* only four-year public colleges
 * only two-year public colleges
 
 You can also change whether the weighting computation crosses state
@@ -79,4 +81,5 @@ by [Mike Bostock](https://bost.ocks.org/), and plugins created by
 
 <br>
 
+</div>
 

@@ -46,6 +46,11 @@
     width: 100%;
 }
 
+.posttext {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Selectors/Buttons -------------------------- */
 
 #sample {
