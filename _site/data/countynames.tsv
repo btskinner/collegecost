@@ -289,7 +289,7 @@ id	name
 10001	Kent County, Delaware
 10003	New Castle County, Delaware
 10005	Sussex County, Delaware
-11001	Washington County, District Of Columbia
+11001	Washington, District Of Columbia
 12001	Alachua County, Florida
 12003	Baker County, Florida
 12005	Bay County, Florida
@@ -2880,46 +2880,46 @@ id	name
 51195	Wise County, Virginia
 51197	Wythe County, Virginia
 51199	York County, Virginia
-51510	NA
-51515	NA
-51520	NA
-51530	NA
-51540	NA
-51550	NA
-51560	NA
-51570	NA
-51580	NA
-51590	NA
-51595	NA
-51600	NA
-51610	NA
-51620	NA
-51630	NA
-51640	NA
-51650	Hampton County, Virginia
-51660	NA
-51670	NA
-51678	NA
-51680	NA
-51683	NA
-51685	NA
-51690	NA
-51700	Newport News County, Virginia
-51710	Norfolk County, Virginia
-51720	NA
-51730	NA
-51735	NA
-51740	NA
-51750	NA
-51760	NA
-51770	NA
-51775	NA
-51790	NA
-51800	Suffolk County, Virginia
-51810	Virginia Beach County, Virginia
-51820	NA
-51830	NA
-51840	NA
+51510	Alexandria, Virginia
+51515	Bedford, Virginia
+51520	Bristol, Virginia
+51530	Buena Vista, Virginia
+51540	Charlottesville, Virginia
+51550	Chesapeake, Virginia
+51560	Clifton Forge, Virginia
+51570	Colonial Heights, Virginia
+51580	Covington, Virginia
+51590	Danville, Virginia
+51595	Emporia, Virginia
+51600	Fairfax, Virginia
+51610	Falls Church, Virginia
+51620	Franklin, Virginia
+51630	Fredericksburg, Virginia
+51640	Galax, Virginia
+51650	Hampton, Virginia
+51660	Harrisonburg, Virginia
+51670	Hopewell, Virginia
+51678	Lexington, Virginia
+51680	Lynchburg, Virginia
+51683	Manassas, Virginia
+51685	Manassas Park, Virginia
+51690	Martinsville, Virginia
+51700	Newport News, Virginia
+51710	Norfolk, Virginia
+51720	Norton, Virginia
+51730	Petersburg, Virginia
+51735	Poquoson, Virginia
+51740	Portsmouth, Virginia
+51750	Radford, Virginia
+51760	Richmond, Virginia
+51770	Roanoke, Virginia
+51775	Salem, Virginia
+51790	Staunton, Virginia
+51800	Suffolk, Virginia
+51810	Virginia Beach, Virginia
+51820	Waynesboro, Virginia
+51830	Williamsburg, Virginia
+51840	Winchester, Virginia
 53001	Adams County, Washington
 53003	Asotin County, Washington
 53005	Benton County, Washington

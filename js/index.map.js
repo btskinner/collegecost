@@ -236,8 +236,11 @@ function ready(us, data, names) {
 	    // reset the current frame so new animation starts here
 	    currentFrame = +value - +minyear
 
+	    // change year
+	    year = String(value);
+
 	    // draw the map
-	    drawMap(value + school + weight);
+	    drawMap(year + school + weight);
 
 	});
 
