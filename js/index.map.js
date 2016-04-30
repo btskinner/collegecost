@@ -18,7 +18,7 @@ var opts = {
     , fps: 20
     , zIndex: 2e9
     , className: 'spinner'
-    , top: '25%'
+    , top: '50%'
     , left: '50%'
     , shadow: false
     , hwaccel: false
