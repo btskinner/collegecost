@@ -1,4 +1,4 @@
-title: Changing college costs from 1997 to 2012
+title: Changing college cost from 1997 to 2012
 subtitle: Will Doyle and Benjamin Skinner
 siteurl: /collegecost
 github: https://github.com/btskinner/collegecost
@@ -12,7 +12,7 @@ disqus_shortname:
 # Build settings
 markdown:     kramdown
 redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+  extensions: ['smart', 'tables', 'with_toc_data', 'footnotes']
 permalink:    pretty
 
 

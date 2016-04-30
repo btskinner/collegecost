@@ -16,7 +16,7 @@
 <body>
   <main>
     <header class="site-header">
-      <h1 class="site-title"><a href="/">Changing college costs from 1997 to 2012</a></h1>
+      <h1 class="site-title"><a href="/">Changing college cost from 1997 to 2012</a></h1>
       <h6 class="site-subtitle"><a href="/authors/">Will Doyle and Benjamin Skinner</a>
       </h6>
       <article class="post">
@@ -54,43 +54,68 @@
 
 <div class="posttext">
 
-  <p>While a person who wishes to attend college has, in theory, thousands
-of choices, the reality is that his or her options are practically
-constrained by where he or she lives. Based on the number and
-proximity of postsecondary institutions as well as the tuition charges
-of those schools, potential students across the country face different
-average tuition costs. These costs have also changed across time.</p>
+  <p>With thousands of colleges and universities spread across the country,
+those who want to attend higher education have an incredible number of
+choices. Yet the majority of higher education students—over
+two-thirds—attend a school within 50 miles of home. Over half attend
+a school within 20 miles<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. This fact suggests that despite a
+theoretical abundance of choice, most postsecondary students choose
+among nearby schools. Because students and schools are not equally
+distributed around the nation, some students will have more choices
+than others. Also, because schools have different costs of attendance,
+it will be more expensive, on average, to go to college in some areas
+than others.</p>
 
-  <p>The interactive maps above show the average weighted college price in constant 2013
-dollars for each county in the lower 48 states from 1997
-to 2012. Using the selection widgets, you can change the college sample to
-include:</p>
+  <p>The interactive map above shows the average college price (tuition and
+fees) for each county in the lower 48 states for each year from 1997
+to 2012. Hovering over a county will show its unique price, which is
+a distance-weighted average of the tuition and fees at surrounding
+colleges and universities. Within each year, the variation in price
+across the country is shown by the differences in color. Blue values
+are given to comparatively lower prices, red values to higher. Because
+dollar amounts are adjusted to constant 2013 dollars, moving the
+slider or clicking the play button shows how these average prices have
+increased since the late 1990s.</p>
+
+  <p>Using the selection widgets, you can change the college sample to include:</p>
 
   <ul>
-    <li>all Title IV colleges</li>
+    <li>all colleges</li>
     <li>only public colleges</li>
     <li>only four-year public colleges</li>
     <li>only two-year public colleges</li>
   </ul>
 
-  <p>You can also change whether the weighting computation crosses state
-lines or only considers in-state
-schools. <a href="/methodology/">Visit the methodology page for a more complete explanation of how the weighted averages are computed.</a></p>
+  <p>Different college samples will give different ranges of price since
+some schools (public two-year colleges) are generally less expensive
+than others (public four-year and private universities). You can also
+change whether the weighting computation includes all schools or only
+those in the same state as the
+county. <a href="/methodology/">Visit the methodology page for a more complete explanation of how the weighted averages are computed.</a></p>
 
-  <p><br /></p>
+  <h5 id="acknowledgments">Acknowledgments</h5>
 
-  <h4 id="acknowledgements">Acknowledgements</h4>
+  <p>County-level weighted price data were computed in
+<a href="https://cran.r-project.org">R</a> by the authors using information
+gathered from <a href="http://nces.ed.gov/ipeds/">IPEDS</a>.  The interactive
+maps were constructed using <a href="d3.js">D3.js</a>, the US TopoJSON file made
+available by <a href="https://bost.ocks.org/">Mike Bostock</a>, and plugins
+created by <a href="http://d3-legend.susielu.com">Susie Lu</a>,
+<a href="https://github.com/MasterMaps/d3-slider">Bjørn Sandvik</a>, and
+<a href="http://spin.js.org">Felix Gnass</a>.</p>
 
-  <p>County-level weighted cost data were computed in <a href="https://cran.r-project.org">R</a> by the authors using
-information gathered from IPEDS.  The interactive maps were
-constructed using <a href="d3.js">D3.js</a>, the US TopoJSON file made available
-by <a href="https://bost.ocks.org/">Mike Bostock</a>, and plugins created by
-<a href="http://d3-legend.susielu.com">Susie Lu</a>, <a href="https://github.com/MasterMaps/d3-slider">Bjørn Sandvik</a>, and <a href="http://spin.js.org">Felix Gnass</a>.</p>
-
-  <p><br /></p>
+  <h5 id="notes">Notes</h5>
 
 </div>
 
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Numbers computed by author using the <a href="http://nces.ed.gov/surveys/npsas/">NCES 2011-2012 National Postsecondary
+Student Aid Study (NPSAS:12)</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </article>
 

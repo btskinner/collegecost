@@ -51,6 +51,12 @@
     margin: 0 auto;
 }
 
+.footnotes {
+    width: 80%;
+    margin: 0 auto 8rem;
+}
+
+
 /* Selectors/Buttons -------------------------- */
 
 #sample {
