@@ -67,12 +67,12 @@ function ready(us, data, names) {
     var	dataColumn = year + school + weight;
 
     // map dimensions
-    var width = 1120
-    , height = 695;
+    var width = 960
+    , height = 600;
 
     // set projection
     var projection = d3.geo.albers()
-	.scale(1545)
+	.scale(1280)
 	.translate([width / 2, height / 2]);
 
     // color domain/labels are backwards so red is means higher costs

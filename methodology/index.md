@@ -4,12 +4,6 @@ title: Methodology
 ---
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <style type='text/css'>
-
-.post {
-	width:80%;
-	margin: 0 auto;
-}
-
 </style>
 
 ### Visualizing distance measure

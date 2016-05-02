@@ -2,8 +2,8 @@
 
 #viz-container {
     position: relative;
-    width: 1120px;
-    min-height: 695px;
+    width: 960px;
+    min-height: 600px;
     margin-bottom: 10rem;
 }
 
@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 695px;
+    min-height: 600px;
 }
 
 #submap-container {
@@ -26,14 +26,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 40%;
+    width: 50%;
 }
 
 #tooltip-container {
     position: absolute;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 50%;
     margin-top: 1rem;
     text-align: right;
 }
@@ -46,15 +46,15 @@
     width: 100%;
 }
 
-.posttext {
-    width: 80%;
-    margin: 0 auto;
-}
+/* .posttext { */
+/*     width: 80%; */
+/*     margin: 0 auto; */
+/* } */
 
-.footnotes {
-    width: 80%;
-    margin: 0 auto 8rem;
-}
+/* .footnotes { */
+/*     width: 80%; */
+/*     margin: 0 auto 8rem; */
+/* } */
 
 
 /* Selectors/Buttons -------------------------- */

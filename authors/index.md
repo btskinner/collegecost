@@ -3,16 +3,6 @@ layout: page
 title: Authors
 ---
 
-<style type='text/css'>
-
-.post {
-	width:80%;
-	margin: 0 auto;
-}
-
-</style>
-
-
 ### Will Doyle
 
 Will Doyle is an associate professor of higher education in the
