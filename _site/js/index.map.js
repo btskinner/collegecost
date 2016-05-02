@@ -179,7 +179,7 @@ function ready(us, data, names) {
 	// build up legend, locate it, and call it
 	svg.append("g")
 	    .attr("class", "legendOrd")
-	    .attr("transform", "translate(0,500)");
+	    .attr("transform", "translate(0,420)");
 
 	var legendOrd = d3.legend.color()
 	    .labels(legendLabels[+dataColumn.slice(-2,-1)])

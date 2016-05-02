@@ -46,17 +46,6 @@
     width: 100%;
 }
 
-/* .posttext { */
-/*     width: 80%; */
-/*     margin: 0 auto; */
-/* } */
-
-/* .footnotes { */
-/*     width: 80%; */
-/*     margin: 0 auto 8rem; */
-/* } */
-
-
 /* Selectors/Buttons -------------------------- */
 
 #sample {
@@ -168,7 +157,7 @@
 }
 
 .d3-slider-axis text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 
