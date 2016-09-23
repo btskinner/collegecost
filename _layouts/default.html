@@ -6,8 +6,10 @@
 <body>
   <main>
     <header class="site-header">
-      <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-      <h6 class="site-subtitle"><a href="{{ site.baseurl }}/authors/">{{ site.subtitle }}</a>
+      <h1 class="site-title"><a href="{{ site.baseurl }}{{ site.siteurl }}/">
+	  {{ site.title }}</a></h1>
+      <h6 class="site-subtitle"><a href="{{ site.baseurl }}{{ site.siteurl }}/authors/">
+	  {{ site.subtitle }}</a>
       </h6>
       {{ content }}
     </header>
