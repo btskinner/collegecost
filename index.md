@@ -83,7 +83,7 @@ than others (public four-year and private universities). You can also
 change whether the weighting computation includes all schools or only
 those in the same state as the
 county. [Visit the methodology page for a more complete explanation of how the weighted averages are computed.]({{
-site.baseurl }}/{{ site.siteurl }}/methodology/)
+site.baseurl }}{{ site.siteurl }}/methodology/)
 
 ##### Acknowledgments
 
