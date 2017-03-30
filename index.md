@@ -84,6 +84,12 @@ change whether the weighting computation includes all schools or only
 those in the same state as the
 county. [Visit the methodology page for a more complete explanation of how the weighted averages are computed.]({{ site.siteurl }}/methodology/)
 
+##### Related projects
+
+Doyle, W. R., & Skinner, B. T. (forthcoming). Does postsecondary education result in civic benefits? *The Journal of Higher Education*. 
+
+Doyle, W. R., & Skinner, B. T. (2016). [Estimating the education-earnings equation using geographic variation](http://www.sciencedirect.com/science/article/pii/S0272775715300303). *Economics of Education Review*, 53, 254–267.
+
 ##### Acknowledgments
 
 County-level weighted price data were computed in
