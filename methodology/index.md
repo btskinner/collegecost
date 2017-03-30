@@ -81,7 +81,7 @@ For every county in the sample across each sample year, we compute the
 To compute the weighted average price for each county in each year,
           \\(WAP_{iy}\\), these weights are applied to a vector of
           yearly institutional costs, \\(price_{ky}\\), that are taken
-          from IPEDS, and summed with that year. This results in an
+          from IPEDS, and summed within that year. This results in an
           average postsecondary price for each county in each year. We
           repeat this process for different samples of schools: all
           Title IV schools, all public schools, all pubic four-year
