@@ -86,7 +86,8 @@ county. [Visit the methodology page for a more complete explanation of how the w
 
 ##### Related projects
 
-Doyle, W. R., & Skinner, B. T. (forthcoming). Does postsecondary education result in civic benefits? *The Journal of Higher Education*. 
+Doyle, W. R., & Skinner, B. T. (2017). [Does postsecondary education
+result in civic benefits?](http://www.tandfonline.com/doi/full/10.1080/00221546.2017.1291258) *The Journal of Higher Education*, 88(6), 863-893. 
 
 Doyle, W. R., & Skinner, B. T. (2016). [Estimating the education-earnings equation using geographic variation](http://www.sciencedirect.com/science/article/pii/S0272775715300303). *Economics of Education Review*, 53, 254–267.
 
